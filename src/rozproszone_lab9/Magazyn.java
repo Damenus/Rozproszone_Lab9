@@ -31,7 +31,7 @@ public class Magazyn {
             System.out.println("Stan towaru po pobraniu " + numerTowaru + ":" + getMagazyn(numerTowaru));            
         } 
         else if(magazyn[numerTowaru] > 0 &&  magazyn[numerTowaru] < iloscTowaru){
-            this.magazyn[numerTowaru] -= iloscTowaru;
+            this.magazyn[numerTowaru] = 0;
             System.out.println("Stan towaru  po pobraniu " + numerTowaru + ":" + getMagazyn(numerTowaru));
         }
         
